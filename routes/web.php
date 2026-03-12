@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SeminairController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('seminaires.index');
 });
 
 // Resource route for seminaires
